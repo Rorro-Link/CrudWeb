@@ -1,0 +1,169 @@
+
+/* Reseteo de estilos básicos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: bisque;
+    font-family: Arial, sans-serif; 
+}
+
+/* Estilos del contenedor principal */
+.div-titulo {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #4CAF50; 
+}
+
+.div-titulo h1 {
+    font-weight: 300;
+    color: #fff; 
+}
+
+/* Estilos del contenedor del formulario */
+.container {
+    width: 100%;
+    height: calc(100vh - 100px);
+    display: flex;
+    justify-content: center;
+}
+
+.container .div-formulario {
+    width: 30%;
+    min-height: 250px; 
+    margin: 15px;
+    background-color: rgb(135, 132, 132);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 10px 10px rgba(0, 0, 0, 0.3);
+}
+
+.container .div-formulario h2 {
+    margin-top: 10px;
+    font-weight: 300;
+    font-size: 2em;
+    color: whitesmoke;
+}
+
+.container .div-formulario form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container .div-formulario form input,
+.container .div-formulario form button {
+    width: 60%;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+}
+
+.container .div-formulario form button {
+    background-color: #4CAF50; 
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.container .div-formulario form button:hover {
+    background-color: #45a049; 
+}
+
+/* Estilos del contenedor de la lista de empleados */
+.container .div-listado {
+    width: 55%;
+    min-height: calc(100% - 50px); 
+    margin: 15px;
+    background-color: rgb(135, 132, 132);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 10px 10px rgba(0, 0, 0, 0.3);
+}
+
+.container .div-listado h2 {
+    margin-top: 10px;
+    font-weight: 300;
+    font-size: 2em;
+    color: whitesmoke;
+}
+
+.container .div-listado .div-empleados {
+    width: 100%;
+    height: calc(100% - 50px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 15px;
+    padding: 0 30px;
+    overflow-y: auto; 
+}
+
+.container .div-listado .div-empleados p {
+    margin: 10px 0;
+    font-size: 1em;
+    color: #ddd;
+    display: flex;
+    align-items: center; /* Alinea el contenido en el centro verticalmente */
+    width: 100%;
+    justify-content: space-between;
+}
+
+.container .div-listado .div-empleados p span {
+    flex-grow: 1; /* Permite que el texto tome el espacio restante */
+    word-break: break-word; /* Evita que el texto se desborde */
+}
+
+/* Estilos del separador */
+hr {
+    width: 100%;
+    height: 1px;
+    background-color: #ddd; 
+    border: none;
+}
+
+/* Estilos de los botones */
+.btn-container {
+    display: flex;
+    gap: 5px; 
+    justify-content: center; 
+}
+
+.btn {
+    padding: 5px 10px;
+    border: none;
+    margin: 0;
+    color: white;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.btn-editar {
+    background-color: green;
+}
+
+.btn-editar:hover {
+    background-color: darkgreen; 
+}
+
+.btn-eliminar {
+    background-color: red;
+}
+
+.btn-eliminar:hover {
+    background-color: darkred; 
+}
